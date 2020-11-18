@@ -36,16 +36,24 @@
 - Created a method in App that got passed to Square
 - Passed index to the method that returned that info to App
 - $ git add .
-- $ git commit -m "add board game UI and mapped square component"
-- $ git push origin board-game
+- $ git commit -m "added alert that displays the index of our square"
+- $ git push origin alert-index
 - $ git checkout master
-- $ git merge board-game
-- $ git branch -d board-game
+- $ git merge alert-index
+- $ git branch -d alert-index
 
 
+**As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.**
+- $ git checkout -b tree-functionality
+- Emoji keyboard: control, command, spacebar
+- Set the index to be a tree emoji and set state with the updated value
+- $ git add .
+- $ git commit -m "adds the ability to update the question mark to a tree emoji"
+- $ git push origin tree-functionality
+- $ git checkout master
+- $ git merge tree-functionality
+- $ git branch -d tree-functionality
 
-
-- As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji.
 - As a user, if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at 5 and decrements one every time I click on a square that is not the treasure nor the bomb.
