@@ -54,7 +54,18 @@
 - $ git merge tree-functionality
 - $ git branch -d tree-functionality
 
-- As a user, if I select the winning square the question mark will become a treasure emoji.
+**As a user, if I select the winning square the question mark will become a treasure emoji.**
+- $ git checkout -b adding-treasure
+- Added treasureLocation to our state object
+- componentDidMount to set a random number to treasureLocation
+- $ git add .
+- $ git commit -m "adds the ability to uncover a treasure at a random location"
+- $ git push origin adding-treasure
+- $ git checkout master
+- $ git merge adding-treasure
+- $ git branch -d adding-treasure
+
+
 - As a user, if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can see a counter that shows how many guesses I have left. The counter starts at 5 and decrements one every time I click on a square that is not the treasure nor the bomb.
 - As a user, I can see a message informing me that I won the game if I select the square that contains the treasure.
