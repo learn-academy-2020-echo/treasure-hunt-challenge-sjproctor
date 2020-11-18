@@ -5,8 +5,9 @@
 - Ask clarifying questions
 
 ### User Stories
-- As a user, I can see a page with a 3 by 3 grid board game with a question mark in each square. (DONE!)
+**As a user, I can see a page with a 3 by 3 grid board game with a question mark in each square. (DONE!)**
 
+- $ git checkout -b board-game
 - Added a div to Square with an `id="square"`
 - Added styling to the id of square
 ```css
@@ -19,9 +20,31 @@
 - Import Square to App.js
 - Map over square component
 - Pass value as props
-- Add styling to gameboard
+- Add styling and flexbox to gameboard to create the 3x3 grid
+- $ git add .
+- $ git commit -m "add board game UI and mapped square component"
+- $ git push origin board-game
+- $ git checkout master
+- $ git merge board-game
+- $ git branch -d board-game
 
-- As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+
+**As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array. (DONE!)**
+- $ git checkout -b alert-index
+- Passed index to Square
+- Called index onClick in Square
+- Created a method in App that got passed to Square
+- Passed index to the method that returned that info to App
+- $ git add .
+- $ git commit -m "add board game UI and mapped square component"
+- $ git push origin board-game
+- $ git checkout master
+- $ git merge board-game
+- $ git branch -d board-game
+
+
+
+
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji.
 - As a user, if I select the losing square the question mark will become a bomb emoji.
